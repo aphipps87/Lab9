@@ -203,8 +203,8 @@ Transform:
   m_GameObject: {fileID: 116150902}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.02, y: -0.08791, z: 0}
-  m_LocalScale: {x: 18.013, y: 10.375, z: 1}
+  m_LocalPosition: {x: 0.0402, y: 0.054, z: 0}
+  m_LocalScale: {x: 20.810417, y: 10.659164, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -243,7 +243,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -860, y: 515}
+  m_AnchoredPosition: {x: -605, y: 307}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &126040400
@@ -379,7 +379,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 860, y: 515}
+  m_AnchoredPosition: {x: 605, y: 319}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &293493524
@@ -759,6 +759,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &751263363
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 751263364}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &751263364
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751263363}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0796, y: -0.58534, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &785634322
 GameObject:
   m_ObjectHideFlags: 0
@@ -848,7 +879,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4d3aa33cd981c043b67ad218f633f7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CarnivalShooter2D.Pooling.BulletPool2D
-  prefab: {fileID: 0}
+  prefab: {fileID: -2741275272559859352, guid: c20e275ccd16818488f56bf9a4ffe8c9, type: 3}
   initialSize: 20
   expandable: 1
 --- !u!1 &1206853552
@@ -1044,3 +1075,4 @@ SceneRoots:
   - {fileID: 1280970417}
   - {fileID: 1206853555}
   - {fileID: 477530675}
+  - {fileID: 751263364}

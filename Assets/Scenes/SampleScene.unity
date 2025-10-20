@@ -774,8 +774,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb34dc9fdcfe9c240a291a7a2377aa10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TargetSpawner
-  timeBetweenSpawns: 5
-  target: {fileID: 6747204961453258254, guid: f5fb26405ee868142a149bd75516e581, type: 3}
+  timeBetweenSpawns: 2.5
+  targetBasePrefab: {fileID: 6747204961453258254, guid: f5fb26405ee868142a149bd75516e581, type: 3}
+  container: {fileID: 0}
+  laneBuilders: 000000000000000000000000
 --- !u!1 &1206853552
 GameObject:
   m_ObjectHideFlags: 0

@@ -18,7 +18,10 @@ namespace CarnivalShooter2D.Targets
         void Awake()
         {
             sr = GetComponentInChildren<SpriteRenderer>();
-            if (sr) sr.color = color;
+            ChangeColor();
+
+            if (transform.position.x > 0) moveDir = Vector2.left;
+            RandomizeValue();
         }
 
         void OnEnable()
@@ -47,6 +50,38 @@ namespace CarnivalShooter2D.Targets
         {
             // TODO ScoreManager.Instance.AddPoints(points);
             gameObject.SetActive(false);
+        }
+
+
+        void RandomizeValue()
+        {
+            moveSpeed = (int)Random.Range(1, 4);
+            Debug.Log(moveSpeed);
+
+            switch(moveSpeed)
+            {
+                case 1:
+                    points = 1;
+                    color = Color.white;
+                    break;
+                case 2:
+                    points = 5;
+                    color = Color.blue;
+                    break;
+                case 3:
+                    points = 10;
+                    color = Color.red;
+                    break;
+                default:
+                    Debug.LogError("Issue with target randomizer");
+                    break;
+            }
+            ChangeColor();
+        }
+
+        void ChangeColor()
+        {
+            if (sr) sr.color = color;
         }
     }
 }

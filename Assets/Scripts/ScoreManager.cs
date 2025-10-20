@@ -7,7 +7,7 @@ namespace CarnivalShooter2D.Observer
     {
         public static ScoreManager Instance { get; private set; }
 
-        int score = 0;
+        [HideInInspector] public int score = 0;
         readonly List<IScoreObserver> observers = new();
 
         void Awake() => Instance = this;

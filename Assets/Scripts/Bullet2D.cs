@@ -13,6 +13,7 @@ namespace CarnivalShooter2D.Gameplay
         Rigidbody2D rb;
         float despawnAt;
 
+        public void SetSpeed(float newSpeed) { speed = newSpeed; }
         void Awake() => rb = GetComponent<Rigidbody2D>();
 
         void OnEnable()

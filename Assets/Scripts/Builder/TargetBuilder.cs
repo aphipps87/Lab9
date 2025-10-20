@@ -11,6 +11,7 @@ namespace CarnivalShooter2D.Builders
         protected float speed = 2f;
         protected int pts = 10;
         protected Vector2 dir = Vector2.right;
+        protected Color color = Color.white;
         protected Vector3 scl = Vector3.one;
 
         public TargetBuilder WithPrefab(GameObject p) { prefab = p; return this; }

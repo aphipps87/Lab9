@@ -25,15 +25,18 @@ namespace CarnivalShooter2D.Pooling
             return inst;
         }
 
-        public virtual T Get()
+        public T Get(System.Action<T> initializer)
         {
             if (pool.Count == 0 && expandable)
                 pool.Enqueue(CreateInstance());
 
             var inst = pool.Dequeue();
+            // configure before activation
+            initializer?.Invoke(inst);
             inst.gameObject.SetActive(true);
             return inst;
         }
+
 
         public virtual void ReturnToPool(T instance)
         {

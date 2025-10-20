@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
         timer -= Time.deltaTime;
 
 
-        timerText.text = timer.ToString();
+        timerText.text = timer.ToString("F2");
         scoreText.text = scoreManager.score.ToString();
     }
 

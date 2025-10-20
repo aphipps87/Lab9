@@ -11,5 +11,6 @@ namespace CarnivalShooter2D.Pooling
             base.Awake();
             Instance = this;
         }
+
     }
 }

@@ -56,7 +56,7 @@ namespace CarnivalShooter2D.Targets
         void RandomizeValue()
         {
             moveSpeed = (int)Random.Range(1, 4);
-            Debug.Log(moveSpeed);
+            //Debug.Log(moveSpeed);
 
             switch(moveSpeed)
             {
